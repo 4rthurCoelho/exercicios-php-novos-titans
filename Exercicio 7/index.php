@@ -1,15 +1,12 @@
 <?php
 
-    $livro = [
-        "Professor" => "Vermelho Branco e Sangue Azul", 
-        "Aluno" => "Outro Livro"
-    ];
+    $livro = "Vermelho Branco e Sangue Azul";
     $user = $argv[1];
     $nome = $argv[2];
 
     if ($user === "Professor" || $user === "professor"){
 
-    echo "Professor $nome. Você tem 10 dias a partir da data de empréstimo para fazer a devolução do Livro: " .$livro['Professor'];
+    echo "Professor $nome. Você tem 10 dias a partir da data de empréstimo para fazer a devolução do Livro: $livro";
 
     }elseif ($user === "Professora" || $user === "professora"){
 

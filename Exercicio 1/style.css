@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #b601fd, #ff0077);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: white;
+    max-width: 800px;
+    min-height: 70vh;
+    padding: 100px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 5);
+    border-radius: 15px;
+    animation: backInDown; 
+    animation-duration: 4s; 
+}
+
+main h2 {
+    font-size: 50px;
+   color: #960d7f;
+}
+
+main p {
+    font-size: 20px; 
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child{
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #b601fd, #ff0077);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field label {
+    outline: none;
+    font-size: 20px;
+}
+
+.input-field input {
+    outline: none;
+    font-size: 16px;
+}
+
+.input-field input::placeholder {
+  color: #960d7f;
+}
+
+form input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #b601fd, #ff0077);
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    transition: all .3s ease;
+    
+}
