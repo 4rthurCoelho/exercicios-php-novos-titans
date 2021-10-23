@@ -16,7 +16,7 @@
 			$sum = $sum - 5;
 		}
 		
-		echo "O resultado é $sum\n";		
+		
 	}
 ?>
 
@@ -28,13 +28,12 @@
 	<link rel="stylesheet" href="style.css">
 	<link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 	
 <main class= "container">
-    
+   
 	<h2>Exercício 1</h2>
 
     <p>Coloque os 2 valores, o algoritimo vai ler os 2 números e efetuar a adição. Caso o valor somado seja maior que 20, 
@@ -52,12 +51,17 @@
 			<label for="email">Valor 2</label><br />
 			<input type="text" name="value2" value="<?= $value2 ?>" id="valor2" placeholder="Adicione um valor!"/>
 			<div class="underline"></div>
-			<input type="submit" name="enviar" value="Enviar"/>
+			<input type="submit" name="enviar" value="Enviar"/>	
 
-		</div>
+		</div>	
 		
 		
     </form>
+	 
+	<?php
+		echo "<div class='result'>O resultado é $sum.</div>";
+	?>
+	
 </main>
 </body>
 </html>
