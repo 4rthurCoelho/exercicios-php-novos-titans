@@ -57,11 +57,12 @@
 		
 		
     </form>
-	 
-	<?php
-		echo "<div class='result'>O resultado é $sum.</div>";
-	?>
+		
+		<h3>Resposta:</h3>
 	
+		<?php
+			echo "<div class='result'>$sum</div>";
+		?>
 </main>
 </body>
 </html>
