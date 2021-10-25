@@ -61,25 +61,7 @@
 		<h3>Resposta:</h3>
 	
 		<?php
-			$value1 = $value2 = '';	
 
-            if (key_exists('value1', $_POST) && key_exists('value2', $_POST)) {
-                $value1 = $_POST['value1'];
-                $value2 = $_POST['value2'];
-                
-                $sum = $value1 + $value2;
-                
-                if ($sum > 20){
-                    $sum = $sum + 8;
-                }
-                
-                if ($sum <= 20){
-                    $sum = $sum - 5;
-                }
-                echo "<div class='result'>$sum</div>";
-                
-            }
-          
 		?>
 </main>
 </body>
