@@ -61,7 +61,7 @@
 		<h3>Resposta:</h3>
 	
 		<?php
-			echo "<div class='result'>$sum</div>";
+
 		?>
 </main>
 </body>
