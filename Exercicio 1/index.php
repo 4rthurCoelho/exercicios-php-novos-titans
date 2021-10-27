@@ -43,13 +43,13 @@
 
 	<form id="formulario" action="index.php" method="post">
 		<div class="input-field">
-			<label for="email">Valor 1</label><br />
-			<input type="text" name="value1" value="<?= $value1 ?>" id="valor1" placeholder="Adicione um valor!"/>
+			<label for="number">Valor 1</label><br />
+			<input type="number" name="value1" value="<?= $value1 ?>" id="valor1" placeholder="Adicione um valor!"/>
 			<div class="underline"></div>
   		</div>
 		<div class="input-field">
-			<label for="email">Valor 2</label><br />
-			<input type="text" name="value2" value="<?= $value2 ?>" id="valor2" placeholder="Adicione um valor!"/>
+			<label for="number">Valor 2</label><br />
+			<input type="number" name="value2" value="<?= $value2 ?>" id="valor2" placeholder="Adicione um valor!"/>
 			<div class="underline"></div>
 			<input type="submit" name="enviar" value="Enviar"/>	
 
@@ -58,10 +58,26 @@
 		
     </form>
 		
-		<h3>Resposta:</h3>
-	
 		<?php
+			$value1 = $value2 = '';	
 
+            if (key_exists('value1', $_POST) && key_exists('value2', $_POST)) {
+                $value1 = $_POST['value1'];
+                $value2 = $_POST['value2'];
+                
+                $sum = $value1 + $value2;
+                
+                if ($sum > 20){
+                    $sum = $sum + 8;
+                }
+                
+                if ($sum <= 20){
+                    $sum = $sum - 5;
+                }
+                echo "<h3>Resposta:</h3><div class='result'>$sum</div>";
+                
+            }
+          
 		?>
 </main>
 </body>
