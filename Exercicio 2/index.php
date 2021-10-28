@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Exercicio-01</title>
+	<title>Exercicio-02</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 	<link
