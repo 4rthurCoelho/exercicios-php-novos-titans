@@ -12,10 +12,10 @@
 	
 <main class= "container">
    
-	<h2>Exercício 1</h2>
+	<h2>Exercício 3</h2>
 
-    <p>Coloque os 2 valores, o algoritimo vai ler os 2 números e efetuar a adição. Caso o valor somado seja maior que 20, 
-	vai ser apresentando a soma dele mais 8; caso o valor somado seja menor ou igual a 20, sera apresentado a soma subtraindo-se 5.</p>
+    <p>Entre com nome, sexo e idade de uma pessoa. Se a pessoa for do sexo feminino e tiver menos que 25 anos,
+ 	imprimir nome e a mensagem: ACEITA. Caso contrário, imprimir nome e a mensagem: NÃO ACEITA.</p>
 
     <br />
 
