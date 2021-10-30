@@ -26,35 +26,13 @@
 			$sexo = "";
 			$idade = "";
 
-			if(isset($_POST['valeu1']) && ($_POST['value2']) && ($_POST['value3'])) {
+			if(isset($_POST['value1']) && ($_POST['value2']) && ($_POST['value3'])) {
 				
 				$nome = $_POST['value1'];
 				$sexo = $_POST['value2'];
 				$idade = $_POST['value3'];
 			
-				if ($sexo == "F" && $idade <= 25) {
-					echo "<div class='results'>Parabens $nome você foi ACEITA:)</div>";
-				}
-				
-				else if ($sexo == "f" && $idade <= 25) {
-					echo "<div class='results'>Parabens $nome você foi ACEITA:)</div>";
-				}
-
-				else if ($sexo == "Feminino" && $idade <= 25) {
-					echo "<div class='results'>Parabens $nome você foi ACEITA:)</div>";
-				}
-
-				else if ($sexo == "feminino" && $idade <= 25) {
-					echo "<div class='results'>Parabens $nome você foi ACEITA:)</div>";
-				}
-
-				else {
-					echo "<div class='results'>$nome você não foi Aceita(o) pois não atende os requisitos do projeto:(</div>";
-				}
-			
 			}
-
-          
 		?>
 
 	<form id="formulario" action="index.php" method="POST">
@@ -79,6 +57,33 @@
 		<input type="submit" name="enviar" value="Enviar"/>	
 		
     </form>
+
+	<?php
+		
+		if(isset($_POST['value1']) && ($_POST['value2']) && ($_POST['value3'])) {
+		
+		if ($sexo == "F" && $idade <= 25) {
+			echo "<div class='results'>Parabens $nome você foi ACEITA:)</div>";
+		}
+		
+		else if ($sexo == "f" && $idade <= 25) {
+			echo "<div class='results'>Parabens $nome você foi ACEITA:)</div>";
+		}
+
+		else if ($sexo == "Feminino" && $idade <= 25) {
+			echo "<div class='results'>Parabens $nome você foi ACEITA:)</div>";
+		}
+
+		else if ($sexo == "feminino" && $idade <= 25) {
+			echo "<div class='results'>Parabens $nome você foi ACEITA:)</div>";
+		}
+
+		else {
+			echo "<div class='results'>$nome você não foi Aceita(o) pois não atende os requisitos do projeto:(</div>";
+		}
+
+	}
+  ?>
 
 </main>
 </body>
