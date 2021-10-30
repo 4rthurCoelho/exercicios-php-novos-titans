@@ -16,32 +16,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: 400% 400%;
-    -webkit-animation: AnimationName 10s ease-in-out infinite;
-    -moz-animation: AnimationName 10s ease-in-out infinite;
-    -o-animation: AnimationName 10s ease-in-out infinite;
-    animation: AnimationName 10s ease-in-out infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 59%}
-    50%{background-position:100% 42%}
-    100%{background-position:0% 59%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 59%}
-    50%{background-position:100% 42%}
-    100%{background-position:0% 59%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 59%}
-    50%{background-position:100% 42%}
-    100%{background-position:0% 59%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 59%}
-    50%{background-position:100% 42%}
-    100%{background-position:0% 59%}
 }
 
 main.container {
@@ -51,7 +25,7 @@ main.container {
     padding: 100px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 3);
     border-radius: 15px;
-    animation: zoomInDown; 
+    animation: rotateIn; 
     animation-duration: 1s; 
     
 }
