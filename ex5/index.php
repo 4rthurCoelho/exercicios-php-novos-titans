@@ -4,7 +4,7 @@
 <head>
 	<title>Exercicio-05</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/css/style.css">
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -19,7 +19,7 @@
 
     <br />
 
-	<form id="formulario" action="index.php" method="post">
+	<form id="formulario" action="/ex5/index.php" method="post">
 		<div class="input-field">
 			<label for="number">Lado AB</label><br />
 			<input type="number" name="value1" value="<?= $AB ?>" id="valor1" autocomplete="off" placeholder="Adicione um numero!"/>

@@ -4,7 +4,7 @@
 <head>
 	<title>Exercicio-02</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/css/style.css">
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -20,7 +20,7 @@
 
     <br />
 
-	<form id="formulario" action="index.php" method="post">
+	<form id="formulario" action="/ex2/index.php" method="post">
 		<div class="input-field">
 			<label for="number">Número</label><br />
 			<input type="number" name="value" value="<?= $num ?>" id="valor1" placeholder="Adicione um valor!"/>

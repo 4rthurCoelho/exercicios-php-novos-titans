@@ -3,7 +3,7 @@
 <head>
 	<title>Exercicio-07</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/css/style.css">
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -18,7 +18,7 @@
 
     <br />
 
-	<form id="formulario" action="index.php" method="post">
+	<form id="formulario" action="/ex7/index.php" method="post">
 		<div class="input-field">
 			<label for="text">Nome</label><br />
 			<input type="text" name="value1" id="valor1" autocomplete="off" placeholder="Qual é o seu nome?"/>

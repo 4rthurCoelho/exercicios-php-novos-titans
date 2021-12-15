@@ -20,7 +20,7 @@
                         
                             <br />
                         
-                            <form id="formulario" action="index.php" method="post">
+                            <form id="formulario" action="/ex8/index.php" method="post">
                                 <div class="input-field">
                                     <label for="number">Número</label><br />
                                     <input type="number" name="value1" value="<?= $num ?>" id="valor1" autocomplete="off" placeholder="Adicione um numero!"/>
