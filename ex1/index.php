@@ -6,6 +6,7 @@
 	<title>Exercicio-01</title> 
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/ex1/style.css">
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -13,7 +14,9 @@
 <body>
 	
 <main class= "container">
-   
+  
+<a href="../index.php" id="voltar">Voltar</a>    
+ 
 	<h2>Exercício 1</h2>
 
     <p>Coloque os 2 valores, o algoritimo vai ler os 2 números e efetuar a adição. Caso o valor somado seja maior que 20, 
@@ -25,14 +28,11 @@
 		<div class="input-field">
 			<label for="number">Valor 1</label><br />
 			<input type="number" name="value1" value="<?= $value1 ?>" id="valor1" placeholder="Adicione um valor!"/>
-			<div class="underline"></div>
   		</div>
 		<div class="input-field">
 			<label for="number">Valor 2</label><br />
 			<input type="number" name="value2" value="<?= $value2 ?>" id="valor2" placeholder="Adicione um valor!"/>
-			<div class="underline"></div>
 			<input type="submit" name="enviar" value="Enviar"/>	
-
 		</div>	
 		
 		

@@ -4,6 +4,7 @@
 	<title>Exercicio-07</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/ex7/style.css">
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -11,7 +12,9 @@
 <body>
 
 <main class= "container">
-   
+    
+<a href="../index.php" id="voltar">Voltar</a>    
+
 	<h2>Exercício 7</h2>
 
     <p><br />Coloque seu nome e cargo para saber quantos dias tem para devolver o livro!<br /></p>

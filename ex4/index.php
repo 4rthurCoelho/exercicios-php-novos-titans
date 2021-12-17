@@ -4,6 +4,7 @@
 	<title>Exercicio-04</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/ex4/style.css">
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -11,7 +12,9 @@
 <body>
 
 <main class= "container">
-   
+ 
+<a href="../index.php" id="voltar">Voltar</a>    
+  
 	<h2>Exercício 4</h2>
 
     <p><br />Entrar com 3 números e o algoritimo ira imprimi-los em ordem decrescente (suponha números diferentes) :)<br /></p>

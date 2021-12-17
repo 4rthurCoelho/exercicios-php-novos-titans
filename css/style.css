@@ -123,3 +123,16 @@ input[type=number] {
    appearance: textfield;
 
 }
+
+#voltar{
+    background: #7e90a0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    font-weight: 400;
+}

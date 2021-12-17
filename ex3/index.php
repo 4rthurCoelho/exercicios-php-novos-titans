@@ -4,6 +4,7 @@
 	<title>Exercicio-03</title> 
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/ex3/style.css">
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -11,7 +12,9 @@
 <body>
 	
 <main class= "container">
-   
+ 
+<a href="../index.php" id="voltar">Voltar</a>    
+  
 	<h2>Exercício 3</h2>
 
     <p>Entre com nome, sexo e idade de uma pessoa. Se a pessoa for do sexo feminino e tiver menos que 25 anos,

@@ -5,6 +5,7 @@
 	<title>Exercicio-05</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/ex5/style.css">
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -12,7 +13,9 @@
 <body>
 
 <main class= "container">
-   
+ 
+<a href="../index.php" id="voltar">Voltar</a>    
+  
 	<h2>Exercício 5</h2>
 
     <p><br />Ler 3 números, os possíveis lados de um triângulo, e imprimir a classificação de acordo com tamanho dos lados<br /></p>
