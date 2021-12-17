@@ -10,114 +10,29 @@
 
 body {
     background: linear-gradient(45deg, #b601fd, #ff0077);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 main.container {
     background: white;
-    max-width: 800px;
-    min-height: 70vh;
-    padding: 100px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 3);
-    border-radius: 15px;
-    animation: backInDown; 
-    animation-duration: 4s; 
-    
 }
 
 main h2 {
-    font-size: 50px;
     color: #960d7f;
 }
 
-main p {
-    font-size: 20px; 
-}
-
-.input-field {
-    position: relative;
-}
-
-form .input-field:first-child{
-    margin-bottom: 1.5rem;
-}
-
-.input-field .underline::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-
-}
-
-.input-field .underline::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    background: linear-gradient(45deg, #b601fd, #ff0077);
-    transform: scaleX(0);
-    transition: all .3s ease-in-out;
-    transform-origin: left;
-}
-
-.input-field input:focus ~ .underline::after {
-    transform: scaleX(1);
-}
-
-.input-field label {
-    outline: none;
-    font-size: 20px;
-}
-
-.input-field input {
-    outline: none;
-    font-size: 16px;
-}
 
 .input-field input::placeholder {
   color: #960d7f;
 }
 
 form input[type="submit"] {
-    margin-top: 2rem;
-    padding: 0.4rem;
     background: linear-gradient(to left, #b601fd, #ff0077);
-    cursor: pointer;
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 15px;
-    position: absolute;
-    width: 100%;   
-}
-
-.result{
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 50px;
-    background-image: linear-gradient(45deg, #b601fd, #ff0077);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: black;
-    font-weight: 300;
+    color: white;   
 }
 
 
 h3 {
-    text-align: center;
-    margin-top: 8rem;
-    font-size: 30px;
+
     color: #960d7f;
 }
 
@@ -129,5 +44,17 @@ input[type=number] {
    -moz-appearance: textfield;
    appearance: textfield;
 
+}
+
+.results{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 30px;
+    background-image: linear-gradient(45deg, #b601fd, #ff0077);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-weight: 300;
 }
 

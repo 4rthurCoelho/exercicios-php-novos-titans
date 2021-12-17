@@ -5,7 +5,7 @@
                             <title>Exercicio-08</title>
                             <meta charset="utf-8">
                             <link rel="stylesheet" href="/css/style.css">
-                            <link rel="stylesheet" href="/ex8/ex8.css">
+                            <link rel="stylesheet" href="/ex8/style.css">
                             <link
                             rel="stylesheet"
                             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -14,6 +14,8 @@
                         
                         <main class= "container">
                         
+                            <a href="../index.php" id="voltar">Voltar</a>    
+
                             <h2>Exercício 8</h2>
                         
                             <p><br /> Adicione um número que o algoritmos vai ler e mostrar todos os número de 1 até ele e o seu produto :)<br /></p>

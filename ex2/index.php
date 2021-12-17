@@ -5,6 +5,7 @@
 	<title>Exercicio-02</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/ex2/style.css">
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -13,7 +14,9 @@
 
 <div class= "containerplus">
 <main class= "container">
-   
+ 
+<a href="../index.php" id="voltar">Voltar</a>    
+  
 	<h2>Exercício 2</h2>
 
     <p><br />Entre com um número e o algoritimo informará se ele é divisível por 10, por 5, por 2 ou se não é divisível por nenhum destes :)<br /></p>
