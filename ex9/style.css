@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #f26e61, #f24e97);
+}
+
+main.container {
+    background: white;
+}
+
+main h2 {
+    color: #960d46;
+}
+
+
+.input-field input::placeholder {
+  color: #960d46;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(to left, #f26e61, #f24e97);
+    color: white;   
+}
+
+
+h3 {
+
+    color: #960d46;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.results{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 30px;
+    background-image: linear-gradient(45deg, #a0453c, #992d5d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-weight: 300;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #f26e61, #f24e97);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}

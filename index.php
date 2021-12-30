@@ -27,7 +27,9 @@
 
             <a href="/ex7" id="ex7">Exercicio 7</a> 
 
-            <a href="/ex8" id="ex8">Exercicio 8</a>    
+            <a href="/ex8" id="ex8">Exercicio 8</a>
+
+            <a href="/ex9" id="ex9">Exercicio 9</a>
         </div>
     </body>
 </html>
