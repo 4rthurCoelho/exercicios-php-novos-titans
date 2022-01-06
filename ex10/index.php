@@ -47,17 +47,17 @@
 				foreach($vetor as $vet){
 					($vet <= 0) ? $neg[]=$vet : $pos[]=$vet;
 				} 
-			echo "<div class='results'>\n</div>" . "<div class='results'>Os vetores positivos são:</div>" . "<div class='results'>\n</div>" . "<div class='results'>\n</div>";
+				echo "<div class='results'>\n</div>" . "<div class='results'>Os vetores positivos são:</div>" . "<div class='results'>\n</div>" . "<div class='results'>\n</div>";
 				print_r($pos);
 							
-			echo "<div class='results'>\n</div>" . "<div class='results'>Os vetores negativos são:</div>" . "<div class='results'>\n</div>" . "<div class='results'>\n</div>";
+				echo "<div class='results'>\n</div>" . "<div class='results'>Os vetores negativos são:</div>" . "<div class='results'>\n</div>" . "<div class='results'>\n</div>";
 				print_r($neg);
 					
-			$total = array_sum($pos);
-			$count = count($neg);
+				$total = array_sum($pos);
+				$count = count($neg);
 					
-			echo "<div class='results'>\n</div>" . "</div><div class='results'>Soma dos positivos: $total</div>";
-			echo "<div class='results'>\n</div>" . "</div><div class='results'>Quantidade de negativos: $count</div>";
+				echo "<div class='results'>\n</div>" . "</div><div class='results'>Soma dos positivos: $total</div>";
+				echo "<div class='results'>\n</div>" . "</div><div class='results'>Quantidade de negativos: $count</div>";
 			}
 		?>
 		
