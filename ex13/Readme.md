@@ -1,9 +1,5 @@
-Olá este é o exercicio 12 da lista de exercicios sobre PHP
+Olá este é o exercicio 13 da lista de exercicios sobre PHP
 
-Criar um algoritmos que entre com uma
-palavra e imprima conforme o exemplo.
- <br />Palavra: sonho
- <br />SONHO
- <br />SONHO SONHO
- <br />SONHO SONHO SONHO
- <br />SONHO SONHO SONHO SONHO
+Ler vários números e informar quantos
+números entre 100 e 200 foram digitados. Se
+o valor 0 for lido encerrar a execução
