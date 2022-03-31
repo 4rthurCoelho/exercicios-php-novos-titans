@@ -5,4 +5,4 @@
 
 ## Como rodar
 1) Acessar a pasta do projeto no terminal
-2) rodar o comando `php -S localhost:8000`
+2) rodar o comando `php -S localhost:8585`
