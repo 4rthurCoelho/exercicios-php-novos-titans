@@ -30,6 +30,14 @@
             <a href="/ex8" id="ex8">Exercicio 8</a>
 
             <a href="/ex9" id="ex9">Exercicio 9</a>
+
+            <a href="/ex10" id="ex10">Exercicio 10</a>
+
+            <a href="/ex11" id="ex11">Exercicio 11</a>
+
+            <a href="/ex12" id="ex12">Exercicio 12</a>
+
+            <a href="/ex13" id="ex13">Exercicio 13</a>
         </div>
     </body>
 </html>

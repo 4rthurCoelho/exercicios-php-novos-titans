@@ -240,7 +240,7 @@ main{
     box-shadow: 0 0 15px #ff3572, 0 0 45px #ff3572, 0 0 85px #ff3572;
 }
 
-/* - Exercicio 8 - */
+/* - Exercicio 9 - */
 
 .container a#ex9{
     position: relative;
@@ -261,6 +261,98 @@ main{
     color: #140025;
     background: #ffffff;
     box-shadow: 0 0 15px #ff3535, 0 0 45px #ff3535, 0 0 85px #ff3535;
+}
+
+/* - Exercicio 10 - */
+
+.container a#ex10{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #A2E84D;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 70px;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+}
+
+.container a#ex10:hover{
+    color: #140025;
+    background: #ffffff;
+    box-shadow: 0 0 15px #A2E84D, 0 0 45px #A2E84D, 0 0 85px #A2E84D;
+}
+
+/* - Exercicio 11 - */
+
+.container a#ex11{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #423BEB;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 70px;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+}
+
+.container a#ex11:hover{
+    color: #140025;
+    background: #ffffff;
+    box-shadow: 0 0 15px #423BEB, 0 0 45px #423BEB, 0 0 85px #423BEB;
+}
+
+/* - Exercicio 12 - */
+
+.container a#ex12{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #dc8051;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 70px;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+}
+
+.container a#ex12:hover{
+    color: #140025;
+    background: #ffffff;
+    box-shadow: 0 0 15px #dc8051, 0 0 45px #dc8051, 0 0 85px #dc8051;
+}
+
+/* - Exercicio 13 - */
+
+.container a#ex13{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #b8faff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 70px;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+}
+
+.container a#ex13:hover{
+    color: #140025;
+    background: #ffffff;
+    box-shadow: 0 0 15px #b8faff, 0 0 45px #b8faff, 0 0 85px #b8faff;
 }
 
 /* - Animaçoes - */
