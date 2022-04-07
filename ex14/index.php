@@ -1,3 +1,7 @@
+<?php
+//conexão
+
+?>
 <!DOCTYPE html>
 	<html lang="pt-br">
 		<head>
@@ -54,6 +58,8 @@
 		</form>
 		
 		<?php
+
+		include_once 'db_connect.php';
 		
 		$altura1 = '';
 		$altura2 = '';
@@ -76,14 +82,15 @@
 			}
 
 			echo "<div class='results'>Serão necessário $anos Anos para que a pessoa 1 seja maior do que pessoa 2.<div/>";
-		}
+		
 
 		$altura1 = mysqli_escape_string($connect, $_POST["altura1"]);
 		$altura2 = mysqli_escape_string($connect, $_POST["altura2"]);
 		$crescimento1 = mysqli_escape_string($connect, $_POST["crescimento1"]);
 		$crescimento2 = mysqli_escape_string($connect, $_POST["crescimento2"]);
 		
-		$sql = "INSERT INTO Resultados (altura1, altura1, crescimento1, crescimento2) VALUES ('$altura1', '$altura2','$crescimento1', '$crescimento2')";
+		$sql = "INSERT INTO Resultados (`altura1`, `altura1`, `crescimento1`, `crescimento2`) VALUES ('$altura1', '$altura2','$crescimento1', '$crescimento2')";
+		}
 		
 		?>
 		
