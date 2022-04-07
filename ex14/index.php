@@ -8,6 +8,7 @@
 			<title>Exercicio-14</title>
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="/css/style.css">
+			<link rel="stylesheet" href="/ex14/style.css">
 			<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -36,19 +37,16 @@
 				<input type="text" name="altura1" id="altura1" autocomplete="off" size="40" placeholder="Digite a altura em centimetros aqui!"/>
 				<div class="underline"></div>
 
-				<br />
 
 				<label for="text">Crescimento anual da pessoa 1</label><br />
 				<input type="text" name="crescimento1" id="crescimento1" autocomplete="off" size="40" placeholder="Digite o crescimento em centimetros aqui!"/>
 				<div class="underline"></div>
 
-				<br />
 
 				<label for="text">Altura da pessoa 2</label><br />
 				<input type="text" name="altura2" id="altura2" autocomplete="off" size="40" placeholder="Digite a altura em centimetros aqui!"/>
 				<div class="underline"></div>
 
-				<br />
 
 				<label for="text">Crescimento anual da pessoa 2</label><br />
 				<input type="text" name="crescimento2" id="crescimento2" autocomplete="off" size="40" placeholder="Digite o crescimento em centimetros aqui!"/>
