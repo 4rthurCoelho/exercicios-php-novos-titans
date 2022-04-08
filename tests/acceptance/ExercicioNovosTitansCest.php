@@ -155,4 +155,45 @@ class ExercicioNovosTitansCest
         $I->click('enviar');
         $I->see('Dezembro');
     }
+
+    public function ex7Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex7');
+        $I->see('Exercício 7');
+        //Teste professor
+        $I->fillField('value1', 'Caio');
+        $I->fillField('value2', 'Professor');
+        $I->click('enviar');
+        $I->see('Professor Caio. Você tem 10 dias a partir da data de empréstimo para fazer a devolução do Livro: Vermelho Branco e Sangue Azul'); 
+        //Teste aluno
+        $I->fillField('value1', 'Caio');
+        $I->fillField('value2', 'Aluno');
+        $I->click('enviar');
+        $I->see('Aluno: Caio. Você tem 03 dias a partir da data de empréstimo para fazer a devolução do Livro: Vermelho Branco e Sangue Azul');  
+    }
+
+    public function ex8Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex8');
+        $I->see('Exercício 8');
+        //Teste
+        $I->fillField('value1', '3');
+        $I->click('enviar');
+        $I->see('1
+        2
+        3'); 
+    }
+
+    public function ex9Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex9');
+        $I->see('Exercício 9');
+        //Teste
+        $I->fillField('value1', '4');
+        $I->click('enviar');
+        $I->see('SOL
+        SOL
+        SOL
+        SOL'); 
+    }
 }
