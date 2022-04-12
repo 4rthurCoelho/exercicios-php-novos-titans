@@ -191,4 +191,54 @@ class ExercicioNovosTitansCest
         $I->click('enviar');
         $I->see('SOLSOLSOLSOL'); 
     }
+
+    public function ex10Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex10');
+        $I->see('Exercício 10');
+        $I->fillField('value1', '1 2 3 4 5 6 7 8 9 -1 -2 -3 -4 -5 -6 -7 -8  -9 -10 -11');
+        $I->click('enviar');
+        $I->see('Os vetores positivos são:
+        Array ( [0] => 1 [1] => 2 [2] => 3 [3] => 4 [4] => 5 [5] => 6 [6] => 7 [7] => 8 [8] => 9 )
+        Os vetores negativos são:
+        Array ( [0] => -1 [1] => -2 [2] => -3 [3] => -4 [4] => -5 [5] => -6 [6] => -7 [7] => -8 [8] => [9] => -9 [10] => -10 [11] => -11 )
+        Soma dos positivos: 45
+        Quantidade de negativos: 12');
+    }
+
+    public function ex11Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex11');
+        $I->see('Exercício 11');
+        //Teste tabuada do 3
+        $I->fillField('value1', '3');
+        $I->click('enviar');
+        $I->see('3 X 0 = 0
+        3 X 1 = 3
+        3 X 2 = 6
+        3 X 3 = 9
+        3 X 4 = 12
+        3 X 5 = 15
+        3 X 6 = 18
+        3 X 7 = 21
+        3 X 8 = 24
+        3 X 9 = 27
+        3 X 10 = 30'); 
+    }
+
+    public function ex12Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex12');
+        $I->see('Exercício 12');
+        //Teste
+        $I->fillField('value1', 'Beijo');
+        $I->click('enviar');
+        $I->see('Beijo
+        Beijo Beijo
+        Beijo Beijo Beijo
+        Beijo Beijo Beijo Beijo
+        Beijo Beijo Beijo Beijo Beijo'); 
+    }
+
+
 }
