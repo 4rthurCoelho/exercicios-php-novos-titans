@@ -355,6 +355,29 @@ main{
     box-shadow: 0 0 15px #b8faff, 0 0 45px #b8faff, 0 0 85px #b8faff;
 }
 
+/* - Exercicio 14 - */
+
+.container a#ex14{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #b8faff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 70px;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+}
+
+.container a#ex14:hover{
+    color: #140025;
+    background: #ffffff;
+    box-shadow: 0 0 15px #b253ee, 0 0 45px #b253ee, 0 0 85px #b253ee;
+}
+
 /* - Animaçoes - */
 
 @keyframes de-cima {
