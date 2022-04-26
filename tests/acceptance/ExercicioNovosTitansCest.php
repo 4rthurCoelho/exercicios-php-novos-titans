@@ -104,8 +104,8 @@ class ExercicioNovosTitansCest
     
     public function ex6Works(AcceptanceTester $I)
     {
-        $I->amOnPage('/ex5');
-        $I->see('Exercício 5');
+        $I->amOnPage('/ex6');
+        $I->see('Exercício 6');
         //Teste Janeiro
         $I->fillField('value1', '1');
         $I->click('enviar');
