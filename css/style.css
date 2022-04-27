@@ -136,3 +136,11 @@ input[type=number] {
     font-size: 10px;
     font-weight: 400;
 }
+
+div{
+    margin-bottom: 20px;
+}
+
+input{
+    width: 500px;
+}
