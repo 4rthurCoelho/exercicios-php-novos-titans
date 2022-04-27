@@ -179,9 +179,7 @@ class ExercicioNovosTitansCest
         //Teste
         $I->fillField('value1', '3');
         $I->click('enviar');
-        $I->see('1
-        2
-        3'); 
+        $I->see('123'); 
     }
 
     public function ex9Works(AcceptanceTester $I)
@@ -191,9 +189,6 @@ class ExercicioNovosTitansCest
         //Teste
         $I->fillField('value1', '4');
         $I->click('enviar');
-        $I->see('SOL
-        SOL
-        SOL
-        SOL'); 
+        $I->see('SOLSOLSOLSOL'); 
     }
 }
