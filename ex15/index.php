@@ -18,27 +18,39 @@
 		
 		<br />
 
-		<p>Ler vários números e informar quantos números entre 100 e 200 foram digitados.
-        Se o valor 0 for lido encerrar a execução</p>
-
-		<br />
-
-		<p>ATENÇÃO: De espaço em cada numero :)</p>
+		<p>Na usina de Angra dos Reis, os técnicos analisam a perda de massa de um material radioativo. 
+		Sabendo-se que este perde 25% de sua massa a cada 30 segundos, criar um algoritmo que imprima o tempo necessário para que a massa
+		desse material seja menor que 0.10. O algoritmo pode calcular o tempo para várias massas.</p>
 		
 		<br />
 		
 		<form id="formulario" action="/ex15/index.php" method="post">
 			<div class="input-field">
-				<label for="text">Números</label><br />
-				<input type="text" name="value1" id="valor1" autocomplete="off" placeholder="Coloque os números aqui!"/>
+				<label for="text">Massa</label><br />
+				<input type="text" name="massa" id="massa" autocomplete="off" placeholder="Coloque o valor da massa aqui!"/>
 				<div class="underline"></div>
 			</div>
 			<input type="submit" name="enviar" value="Enviar" class="enviar"/>	
 		</form>
 		
 		<?php
-
+		if(isset($_POST["massa"])){
+			$massaInicial = ($_POST['massa']);
+			$massaFinal = $massaInicial;
+			$segundos = 0;
 			
+			while ($massaFinal>= 0.10)
+			{
+				
+				$massaFinal = $massaFinal / 0.25;
+				$segundos += 30;
+			
+			}
+			
+			$m = $segundos/60;
+			
+			echo "<div class='results'>Tempo : $m minutos<div/>";
+		}
 		?>
 		
 		</main>
