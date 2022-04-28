@@ -1,7 +1,3 @@
-<?php
-//conexão
-
-?>
 <!DOCTYPE html>
 	<html lang="pt-br">
 		<head>
@@ -14,7 +10,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		</head>
 		<body>
-		
+		dcok
 		<main class= "container">
 			
 		<a href="../index.php" id="voltar">Voltar</a>
@@ -87,7 +83,11 @@
 		$crescimento1 = mysqli_escape_string($connect, $_POST["crescimento1"]);
 		$crescimento2 = mysqli_escape_string($connect, $_POST["crescimento2"]);
 		
-		$sql = "INSERT INTO Resultados (`altura1`, `altura1`, `crescimento1`, `crescimento2`) VALUES ('$altura1', '$altura2','$crescimento1', '$crescimento2')";
+		//$sql = "INSERT INTO Resultados (`altura1`, `altura1`, `crescimento1`, `crescimento2`) VALUES ('$altura1', '$altura2','$crescimento1', '$crescimento2')";
+		$sql = "INSERT INTO Resultados SET `altura1`='$altura1', `altura2`='$altura2', `crescimento1`='$crescimento1', `crescimento2`='$crescimento2'";
+		
+		$mysqli = mysqli_query($connect, $sql);
+		
 		}
 		
 		?>
