@@ -27,29 +27,41 @@
 		<form id="formulario" action="/ex15/index.php" method="post">
 			<div class="input-field">
 				<label for="text">Massa</label><br />
-				<input type="text" name="massa" id="massa" autocomplete="off" placeholder="Coloque o valor da massa aqui!"/>
+				<input type="text" name="massa" id="massa" autocomplete="off" placeholder="Coloque o valor da massa aqui em gramas!"/>
+				<div class="underline"></div>
+			</div>
+
+			<div class="input-field">
+				<label for="text">Perda</label><br />
+				<input type="text" name="perda" id="perda" autocomplete="off" placeholder="Coloque o valor da porcentagem da perda aqui (Ex: Caso o valor for 10% digite apenas 10!"/>
+				<div class="underline"></div>
+			</div>
+
+			<div class="input-field">
+				<label for="text">Tempo</label><br />
+				<input type="text" name="tempo" id="tempo" autocomplete="off" placeholder="Coloque aqui em quanto tempo essa perda vai ocorrer!"/>
 				<div class="underline"></div>
 			</div>
 			<input type="submit" name="enviar" value="Enviar" class="enviar"/>	
 		</form>
 		
 		<?php
-		if(isset($_POST["massa"])){
-			$massaInicial = ($_POST['massa']);
-			$massaFinal = $massaInicial;
-			$segundos = 0;
+		if(isset($_POST["massa"]) && ($_POST["perda"]) && ($_POST["tempo"])){
+			$massa = ($_POST['massa']);
+			$perda = ($_POST["perda"]);
+			$tempo = ($_POST["tempo"]);
 			
-			while ($massaFinal>= 0.10)
-			{
-				
-				$massaFinal = $massaFinal / 0.25;
-				$segundos += 30;
+			$count = 0;
+    		for($massa; $massa>=0.1; $tempo){
+        		$resultado = $massa -($massa / 100 * $perda);
+        		$massa = $resultado;
+        		$count++;
+    		}
+    		$tempoFinal = $tempo*$count;
+
+    		$tempoTotal = $tempoFinal / 60;
 			
-			}
-			
-			$m = $segundos/60;
-			
-			echo "<div class='results'>Tempo : $m minutos<div/>";
+			echo "<div class='results'>Para a massa ser maior ou igual a 0.10 gramas, serão precisos $tempoTotal minutos<div/>";
 		}
 		?>
 		
