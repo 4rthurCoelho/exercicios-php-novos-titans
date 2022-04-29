@@ -46,6 +46,8 @@
 		</form>
 		
 		<?php
+		include_once 'db_connect.php';
+
 		if(isset($_POST["massa"]) && ($_POST["perda"]) && ($_POST["tempo"])){
 			$massa = ($_POST['massa']);
 			$perda = ($_POST["perda"]);
@@ -62,6 +64,12 @@
     		$tempoTotal = $tempoFinal / 60;
 			
 			echo "<div class='results'>Para a massa ser maior ou igual a 0.10 gramas, serão precisos $tempoTotal minutos<div/>";
+
+			$massa = mysqli_escape_string($connect, $_POST["altura1"]);
+			$perda = mysqli_escape_string($connect, $_POST["altura2"]);
+			$tempo = mysqli_escape_string($connect, $_POST["crescimento1"]);
+			
+			$sql = "INSERT INTO Resultados (`massa`, `perda`, `tempo`) VALUES ('$massa', '$perda','$tempo')";
 		}
 		?>
 		
