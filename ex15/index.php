@@ -54,11 +54,13 @@
 			$tempo = ($_POST["tempo"]);
 			
 			$count = 0;
+
     		for($massa; $massa>=0.1; $tempo){
         		$resultado = $massa -($massa / 100 * $perda);
         		$massa = $resultado;
         		$count++;
     		}
+			
     		$tempoFinal = $tempo*$count;
 
     		$tempoTotal = $tempoFinal / 60;
