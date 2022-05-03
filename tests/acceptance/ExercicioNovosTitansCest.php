@@ -240,6 +240,7 @@ class ExercicioNovosTitansCest
         Beijo Beijo Beijo Beijo Beijo'); 
     }
 
+<<<<<<< HEAD
     public function ex15Works(AcceptanceTester $I)
     {
         $I->amOnPage('/ex15');
@@ -252,6 +253,8 @@ class ExercicioNovosTitansCest
         $I->see('Para a massa ser maior ou igual a 0.10 gramas, serão precisos 7 minutos');
         $I->seeInDatabase('Resultados', ['massa' => '10', 'perda' => '20', 'tempo' => '20']);
     }
+=======
+>>>>>>> feito ex16
     public function ex16Works(AcceptanceTester $I)
     {
         $I->amOnPage('/ex16');
