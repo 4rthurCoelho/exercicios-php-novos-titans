@@ -401,6 +401,29 @@ main{
     box-shadow: 0 0 15px #ffe760, 0 0 45px #ffe760, 0 0 85px #ffe760;
 }
 
+/* - Exercicio 16 - */
+
+.container a#ex16{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #60ffc2;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 70px;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+}
+
+.container a#ex16:hover{
+    color: #140025;
+    background: #ffffff;
+    box-shadow: 0 0 15px #60ffc2, 0 0 45px #60ffc2, 0 0 85px #60ffc2;
+}
+
 /* - Animaçoes - */
 
 @keyframes de-cima {

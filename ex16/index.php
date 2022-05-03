@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html lang="pt-br">
 		<head>
-			<title>Exercicio-13</title>
+			<title>Exercicio-16</title>
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="/css/style.css">
 			<link
@@ -21,8 +21,12 @@
 		<p>Armazenar 15 números inteiros em um vetor e imprimir uma mensagem contendo o número e uma das mensagens: par ou ímpar</p>
 		
 		<br />
+
+		<p>ATENÇÃO: De espaço em cada numero :)</p>
+
+		<br />
 		
-		<form id="formulario" action="/ex13/index.php" method="post">
+		<form id="formulario" action="/ex16/index.php" method="post">
 			<div class="input-field">
 				<label for="text">Números</label><br />
 				<input type="text" name="value1" id="valor1" autocomplete="off" placeholder="Coloque os números aqui!"/>
@@ -33,26 +37,23 @@
 		
 		<?php
 			$vetor = '';
-			$tam = '';
-			$qtd = '';	
+			$par = '';
+			$impar = '';	
+			$item = '';
 			
 			if(isset($_POST['value1'])) {
 				
 				$numbers = $_POST['value1'];
 
 				$vetor=explode (" ", $numbers);
-				$tam = count($vetor);
-				$qtd = 0;
+				$par=array();
+				$impar=array();
 			
-				for ($i=0; $i<$tam; $i++) {
-
-					if($vetor[$i] >100 && $vetor[$i] < 200){
-						$qtd += 1;
-					}
-
+				foreach ($vetor as $item) {
+					if ($item % 2 == 0) echo "<div class='results'>O Número $item é par <br><div/>";
+					else echo "<div class='results'>O Número $item é impar <br><div/>";
 				}
 
-				echo "<div class='results'>$qtd números foram informados entre 100 e 200</div>";
 			}
 		?>
 		
