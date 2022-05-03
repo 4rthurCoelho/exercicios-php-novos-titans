@@ -252,5 +252,29 @@ class ExercicioNovosTitansCest
         $I->see('Para a massa ser maior ou igual a 0.10 gramas, serão precisos 7 minutos');
         $I->seeInDatabase('Resultados', ['massa' => '10', 'perda' => '20', 'tempo' => '20']);
     }
+    public function ex16Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex16');
+        $I->see('Exercício 16');
+        //Teste
+        $I->fillField('value1', '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15');
+        $I->click('enviar');
+        $I->see('O Número 1 é impar
+        O Número 2 é par
+        O Número 3 é impar
+        O Número 4 é par
+        O Número 5 é impar
+        O Número 6 é par
+        O Número 7 é impar
+        O Número 8 é par
+        O Número 9 é impar
+        O Número 10 é par
+        O Número 11 é impar
+        O Número 12 é par
+        O Número 13 é impar
+        O Número 14 é par
+        O Número 15 é impar'); 
+    }
+
 
 }
