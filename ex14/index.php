@@ -10,7 +10,6 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		</head>
 		<body>
-		dcok
 		<main class= "container">
 			
 		<a href="../index.php" id="voltar">Voltar</a>
@@ -69,21 +68,18 @@
 			$anos = 0;
 
 			while($altura1 >= $altura2) {
-
 				$altura1 += $crescimento1;
 				$altura2 += $crescimento2;
 				$anos++;
 			}
 
-			echo "<div class='results'>Serão necessário $anos Anos para que a pessoa 1 seja maior do que pessoa 2.<div/>";
+		echo "<div class='results'>Serão necessário $anos Anos para que a pessoa 1 seja maior do que pessoa 2.<div/>";
 		
-
 		$altura1 = mysqli_escape_string($connect, $_POST["altura1"]);
 		$altura2 = mysqli_escape_string($connect, $_POST["altura2"]);
 		$crescimento1 = mysqli_escape_string($connect, $_POST["crescimento1"]);
 		$crescimento2 = mysqli_escape_string($connect, $_POST["crescimento2"]);
 		
-		//$sql = "INSERT INTO Resultados (`altura1`, `altura1`, `crescimento1`, `crescimento2`) VALUES ('$altura1', '$altura2','$crescimento1', '$crescimento2')";
 		$sql = "INSERT INTO Resultados SET `altura1`='$altura1', `altura2`='$altura2', `crescimento1`='$crescimento1', `crescimento2`='$crescimento2'";
 		
 		$mysqli = mysqli_query($connect, $sql);
