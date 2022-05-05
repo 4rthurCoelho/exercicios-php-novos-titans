@@ -36,6 +36,9 @@
 		</form>
 		
 		<?php
+	
+			include_once 'db_connect.php';
+
 			$vetor = '';
 			$par = '';
 			$impar = '';	
@@ -53,6 +56,10 @@
 					if ($item % 2 == 0) echo "<div class='results'>O Número $item é par <br><div/>";
 					else echo "<div class='results'>O Número $item é impar <br><div/>";
 				}
+
+				$numbers = mysqli_escape_string($connect, $_POST["value1"]);
+				
+				$sql = "INSERT INTO Numeros (`massa`) VALUES ('$massa')";
 
 			}
 		?>
