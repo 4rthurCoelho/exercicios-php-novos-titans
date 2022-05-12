@@ -273,7 +273,8 @@ class ExercicioNovosTitansCest
         O Número 12 é par
         O Número 13 é impar
         O Número 14 é par
-        O Número 15 é impar'); 
+        O Número 15 é impar');
+        $I->seeInDatabase('Numeros', ['numeros' => '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15']);
     }
 
 

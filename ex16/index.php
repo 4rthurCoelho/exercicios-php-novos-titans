@@ -43,6 +43,7 @@
 			$par = '';
 			$impar = '';	
 			$item = '';
+			$numbers = '';
 			
 			if(isset($_POST['value1'])) {
 				
@@ -59,7 +60,8 @@
 
 				$numbers = mysqli_escape_string($connect, $_POST["value1"]);
 				
-				$sql = "INSERT INTO Numeros (`massa`) VALUES ('$massa')";
+				$sql = "INSERT INTO Numeros (`numeros`) VALUES ('$numbers')";
+				mysqli_query($connect, $sql);
 
 			}
 		?>

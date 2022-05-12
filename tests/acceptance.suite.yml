@@ -11,6 +11,6 @@ modules:
             url: http://localhost:8585
         - \Helper\Acceptance
         - Db:
-            dsn: 'mysql:host=localhost:3306;dbname=ex15'
+            dsn: 'mysql:host=localhost:3306;dbname=ex16'
             user: 'root'
             password: 'senha'
