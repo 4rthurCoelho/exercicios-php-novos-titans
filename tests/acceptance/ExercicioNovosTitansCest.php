@@ -240,6 +240,31 @@ class ExercicioNovosTitansCest
         Beijo Beijo Beijo Beijo Beijo'); 
     }
 
+    public function ex13Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex13');
+        $I->see('Exercício 13');
+        //Teste
+        $I->fillField('value1', '1 2 3 4 5 150 134 1423 566');
+        $I->click('enviar');
+        $I->see('2 números foram informados entre 100 e 200'); 
+    }
+
+    public function ex14Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex14');
+        $I->see('Exercício 14');
+        //Teste
+        $I->fillField('altura1', '150');
+        $I->fillField('crescimento1', '2');
+        $I->fillField('altura2', '170');
+        $I->fillField('crescimento2', '3');
+        $I->click('enviar');
+        $I->see('Serão necessário 0 Anos para que a pessoa 1 seja maior do que pessoa 2.');
+        $I->seeInDatabase('Resultados', ['altura1' => '150', 'crescimento1' => '2', 'altura2' => '170', 'crescimento2' => '3']);
+    }
+
+    
     public function ex15Works(AcceptanceTester $I)
     {
         $I->amOnPage('/ex15');
@@ -252,6 +277,7 @@ class ExercicioNovosTitansCest
         $I->see('Para a massa ser maior ou igual a 0.10 gramas, serão precisos 7 minutos');
         $I->seeInDatabase('Resultados', ['massa' => '10', 'perda' => '20', 'tempo' => '20']);
     }
+    
     public function ex16Works(AcceptanceTester $I)
     {
         $I->amOnPage('/ex16');
