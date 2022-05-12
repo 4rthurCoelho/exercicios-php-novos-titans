@@ -240,5 +240,17 @@ class ExercicioNovosTitansCest
         Beijo Beijo Beijo Beijo Beijo'); 
     }
 
+    public function ex15Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex15');
+        $I->see('Exercício 15');
+        //Teste
+        $I->fillField('massa', '10');
+        $I->fillField('perda', '20');
+        $I->fillField('tempo', '20');
+        $I->click('enviar');
+        $I->see('Para a massa ser maior ou igual a 0.10 gramas, serão precisos 7 minutos');
+        $I->seeInDatabase('Resultados', ['massa' => '10', 'perda' => '20', 'tempo' => '20']);
+    }
 
 }
