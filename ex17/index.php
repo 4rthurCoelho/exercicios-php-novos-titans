@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html lang="pt-br">
 		<head>
-			<title>Exercicio-16</title>
+			<title>Exercicio-17</title>
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="/css/style.css">
 			<link
@@ -36,12 +36,9 @@
 		</form>
 		
 		<?php
-			$vetor = '';
-			$par = '';
-			$impar = '';	
-			$item = '';
-			$numbers = '';
-			
+
+			include_once 'db_connect.php';
+
 			if(isset($_POST['value1'])) {
 				
 				$numbers = $_POST['value1'];
@@ -73,6 +70,15 @@
 				echo "<div class='results'>Já o menor numero é o {$menor}<br><div/>";
 				echo "<div class='results'>Porcentagem de Numeros Pares: {$percPar}%<br><div/>";
 				echo "<div class='results'>Soma de todos os numeros: {$soma}<div/>";
+				
+				$numbers = mysqli_escape_string($connect, $_POST["value1"]);
+				$maior = mysqli_escape_string($connect, $maior);
+				$menor = mysqli_escape_string($connect, $menor);
+				$percPar = mysqli_escape_string($connect, $percPar);
+				$soma = mysqli_escape_string($connect, $soma);
+					
+				$sql = "INSERT INTO Resultados (`numeros`, `maior`, `menor`, `porcentagem`, `soma`) VALUES ('$numbers', '$maior', '$menor', '$percPar', '$soma')";
+				mysqli_query($connect, $sql);
 			}
 		?>
 		
