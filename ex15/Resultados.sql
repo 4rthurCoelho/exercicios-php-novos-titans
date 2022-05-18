@@ -1,3 +1,12 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: dbMysql
+-- Tempo de geração: 18/05/2022 às 16:49
+-- Versão do servidor: 8.0.28
+-- Versão do PHP: 7.4.27
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -22,7 +31,7 @@ CREATE TABLE `Resultados` (
   `id` int NOT NULL,
   `massa` int NOT NULL,
   `perda` int NOT NULL,
-  `tempo` int NOT NULL,
+  `tempo` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
@@ -43,7 +52,7 @@ ALTER TABLE `Resultados`
 -- AUTO_INCREMENT de tabela `Resultados`
 --
 ALTER TABLE `Resultados`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

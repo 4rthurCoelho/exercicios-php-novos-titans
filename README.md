@@ -14,6 +14,11 @@
 
 - Make sure that you have installed the codeception!
 
+2) In the directory `tests` go in the `acceptance.suite.yml` and change the dbname in `dns` to the dbname of the exercise that you want to test, located in the `db-connect.yml` at the exercise directory!
+
 To more information go to:
 
 - https://codeception.com/
+
+#### Advice: 
+- Read the README in the folders of each exercise for more information :)
