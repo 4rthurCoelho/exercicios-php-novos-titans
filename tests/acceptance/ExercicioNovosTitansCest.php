@@ -262,6 +262,14 @@ class ExercicioNovosTitansCest
         $I->click('enviar');
         $I->see('Serão necessário 0 Anos para que a pessoa 1 seja maior do que pessoa 2.');
         $I->seeInDatabase('Resultados', ['altura1' => '150', 'crescimento1' => '2', 'altura2' => '170', 'crescimento2' => '3']);
+
+        $I->fillField('altura1', '150');
+        $I->fillField('crescimento1', '2');
+        $I->fillField('altura2', '110');
+        $I->fillField('crescimento2', '3');
+        $I->click('enviar');
+        $I->see('Serão necessário 41 Anos para que a pessoa 1 seja maior do que pessoa 2.');
+        $I->seeInDatabase('Resultados', ['altura1' => '150', 'crescimento1' => '2', 'altura2' => '110', 'crescimento2' => '3']);
     }
 
     
