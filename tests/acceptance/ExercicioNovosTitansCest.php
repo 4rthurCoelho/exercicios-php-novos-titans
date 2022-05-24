@@ -323,6 +323,12 @@ class ExercicioNovosTitansCest
         Porcentagem de Numeros Pares: 50%
         Soma de todos os numeros: 210');
         $I->seeInDatabase('Resultados', ['numeros' => '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20', 'maior' => '20', 'menor' => '1', 'porcentagem' => '50', 'soma' => '21']);
+        $I->see('Listagem de Dados Salvos');
+        $I->see('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20');
+        $I->see('20');
+        $I->see('1');
+        $I->see('50');
+        $I->see('210');
     }
 
 }
