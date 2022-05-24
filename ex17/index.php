@@ -4,6 +4,7 @@
 			<title>Exercicio-17</title>
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="/css/style.css">
+			<link rel="stylesheet" href="/ex17/style.css">
 			<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -84,5 +85,31 @@
 		
 		</main>
 		
+		<div class= "container">
+			<h2>Listagem de Dados Salvos</h2>
+
+			<table>
+				<tr>
+					<th>Numeros</th>
+					<th>Maior Numero</th>
+					<th>Menor Numero</th>
+					<th>Valor da Porcentagem</th>
+					<th>Soma</th>
+				</tr>
+				<?php
+				$sql = "SELECT * FROM Resultados";
+                $resultado = mysqli_query($connect, $sql);
+                while($dados = mysqli_fetch_array($resultado)):
+				?>
+				<tr>
+					<td><?= $dados['numeros'];?> </td>
+                    <td><?= $dados['maior'];?> </td>
+                    <td><?= $dados['menor'];?></td>
+                    <td><?= $dados['porcentagem'];?></td>
+                    <td><?= $dados['soma'];?></td>
+				</tr>
+			</table>
+			 <?php endwhile; ?>
+		</div>	
 		</body>
 	</html>
