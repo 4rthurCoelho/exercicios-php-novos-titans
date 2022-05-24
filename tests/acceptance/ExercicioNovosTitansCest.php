@@ -330,5 +330,24 @@ class ExercicioNovosTitansCest
         $I->see('50');
         $I->see('210');
     }
+    
+    public function ex18Works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/ex18');
+        $I->see('Exercício 18');
+        //Teste
+        $I->fillField('values1', '1 2 3 4 5 6 12 13 14 15');
+        $I->fillField('values2', '1 2 3 4 5 6 7 8 9 10');
+        $I->click('enviar');
+        $I->see('Os números não comuns do primeiro conjunto em relação ao segundo conjunto são:
+        12
+        7
+        13
+        8
+        14
+        9
+        15
+        10');
+    }
 
 }
