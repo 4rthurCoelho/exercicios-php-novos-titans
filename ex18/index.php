@@ -74,7 +74,13 @@
 			print "<div class='results'><br> Os números não comuns do primeiro conjunto em relação ao segundo conjunto são: <br></div>";
 
 			forVetor();
-		}
+				
+			$values1 = mysqli_escape_string($connect, $_POST['values1']);
+			$values2 = mysqli_escape_string($connect, $_POST['values2']);
+					
+			$sql = "INSERT INTO Numeros (`conjunto1`, `conjunto2`) VALUES ('$numbers', '$maior')";
+			mysqli_query($connect, $sql);
+			}
 		?>
 
 	</main>
