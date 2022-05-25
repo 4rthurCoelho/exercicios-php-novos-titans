@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-	<title>Exercicio-18</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
-
-<body>
-
-	<main class="container">
-
+	<html lang="pt-br">
+		<head>
+			<title>Exercicio-18</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="/css/style.css">
+			<link rel="stylesheet" href="/ex18/style.css">
+			<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		</head>
+		<body>
+		
+		<main class= "container">
+			
 		<a href="../index.php" id="voltar">Voltar</a>
 
 		<h2>Exercício 18</h2>
@@ -78,13 +79,40 @@
 			$values1 = mysqli_escape_string($connect, $_POST['values1']);
 			$values2 = mysqli_escape_string($connect, $_POST['values2']);
 					
-			$sql = "INSERT INTO Numeros (`conjunto1`, `conjunto2`) VALUES ('$numbers', '$maior')";
+			$sql = "INSERT INTO Numeros (`conjunto1`, `conjunto2`) VALUES ('$values1', '$values2')";
 			mysqli_query($connect, $sql);
 			}
 		?>
+		
+		</main>
 
-	</main>
+		<div class= "container">
+			<h2 class= "titulo-listagem">Listagem de Dados Salvos</h2>
 
-</body>
-
-</html>
+			<table class="content-table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Conjunto 1</th>
+						<th>Conjunto 2</th>
+					</tr>
+				</thead>
+				<?php
+				$sql = "SELECT * FROM Numeros";
+                $resultado = mysqli_query($connect, $sql);
+                while($dados = mysqli_fetch_array($resultado)):
+				?>
+				<tbody>
+					<tr>
+						<td><?= $dados['id'];?> </td>
+						<td><?= $dados['conjunto1'];?> </td>
+						<td><?= $dados['conjunto2'];?> </td>
+						<?php endwhile; ?>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+		
+		</body>
+	</html>
