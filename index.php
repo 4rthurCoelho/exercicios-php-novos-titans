@@ -48,6 +48,8 @@
             <a href="/ex17" id="ex17">Exercicio 17</a>
 
             <a href="/ex19" id="ex19">Exercicio 19</a>
+            
+            <a href="/ex18" id="ex18">Exercicio 18</a>
         </div>
     </body>
 </html>

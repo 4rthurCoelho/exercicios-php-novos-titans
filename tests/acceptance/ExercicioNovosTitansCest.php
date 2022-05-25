@@ -341,6 +341,10 @@ class ExercicioNovosTitansCest
         $I->click('enviar');
         $I->see('Os números não comuns do primeiro conjunto em relação ao segundo conjunto são:
         35 42 4 12 487 34 56');
+        $I->seeInDatabase('Numeros', ['conjunto1' => '1 2 3 4 5 6 12 13 14 15', 'conjunto2' => '1 2 3 4 5 6 7 8 9 10']);
+        $I->see('Listagem de Dados Salvos');
+        $I->see('1 2 3 4 5 6 12 13 14 15');
+        $I->see('1 2 3 4 5 6 7 8 9 10');
     }
 
     public function ex19Works(AcceptanceTester $I)

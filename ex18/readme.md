@@ -11,7 +11,7 @@
 
 ## How to run the database?
 - At the folder of the project, run the command: `docker-compose up -d`
-- Import the structure of the table with the file *resultados.sql* located in the project folder
+- Import the structure of the table with the file *Numeros.sql* located in the project folder
 
 Tip:
 - Look the `docker-compose.yml` to others settings.

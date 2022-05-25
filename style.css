@@ -255,7 +255,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.8s both;
 }
 
 .container a#ex9:hover{
@@ -278,7 +278,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.9s both;
 }
 
 .container a#ex10:hover{
@@ -301,7 +301,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2s both;
 }
 
 .container a#ex11:hover{
@@ -324,7 +324,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.1s both;
 }
 
 .container a#ex12:hover{
@@ -347,7 +347,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.2s both;
 }
 
 .container a#ex13:hover{
@@ -370,7 +370,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.3s both;
 }
 
 .container a#ex14:hover{
@@ -393,7 +393,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.4s both;
 }
 
 .container a#ex15:hover{
@@ -416,7 +416,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.5s both;
 }
 
 .container a#ex16:hover{
@@ -439,7 +439,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.6s both;
 }
 
 .container a#ex17:hover{
@@ -448,13 +448,13 @@ main{
     box-shadow: 0 0 15px #f3943b, 0 0 45px #f3943b, 0 0 85px #f3943b;
 }
 
-/* - Exercicio 19 - */
+/* - Exercicio 18 - */
 
-.container a#ex19{
+.container a#ex18{
     position: relative;
     display: inline-block;
     padding: 15px 30px;
-    color: #a9f33b;
+    color: #f33b91;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-decoration: none;
@@ -462,13 +462,59 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.7s both;
+}
+
+.container a#ex18:hover{
+    color: #140025;
+    background: #ffffff;
+    box-shadow: 0 0 15px #f33b91, 0 0 45px #f33b91, 0 0 85px #f33b91;
+}
+
+/* - Exercicio 19 - */
+
+.container a#ex19{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #59f23b;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 70px;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.8s both;
 }
 
 .container a#ex19:hover{
     color: #140025;
     background: #ffffff;
-    box-shadow: 0 0 15px #a9f33b, 0 0 45px #a9f33b, 0 0 85px #a9f33b;
+    box-shadow: 0 0 15px #59f23b, 0 0 45px #59f23b, 0 0 85px #59f23b;
+}
+
+/* - Exercicio 20 - */
+
+.container a#ex20{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #3b94f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 70px;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.9s both;
+}
+
+.container a#ex20:hover{
+    color: #140025;
+    background: #ffffff;
+    box-shadow: 0 0 15px #3b94f3, 0 0 45px #3b94f3, 0 0 85px #3b94f3;
 }
 
 /* - Animaçoes - */
