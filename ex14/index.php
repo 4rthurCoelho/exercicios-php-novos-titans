@@ -67,11 +67,11 @@
 			$crescimento2 = $_POST["crescimento2"];
 			$anos = 0;
 
-			while($altura1 >= $altura2) {
+			while($altura1 >= $altura2):
 				$altura1 += $crescimento1;
 				$altura2 += $crescimento2;
 				$anos++;
-			}
+			endwhile;
 
 		echo "<div class='results'>Serão necessário $anos Anos para que a pessoa 1 seja maior do que pessoa 2.<div/>";
 		
