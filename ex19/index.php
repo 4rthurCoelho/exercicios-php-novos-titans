@@ -19,7 +19,7 @@
 
 		<br />
 
-		<p>Criar um vetor com 20 elementos inteiros. Imprimir o maior e o menor, sem ordenar, o percentual de números pare e média dos elementos do vetor.</p>
+		<p>Criar um algoritmo com uma matriz 5x5 e escreva os elementos da diagonal principal</p>
 
 		<br />
 
