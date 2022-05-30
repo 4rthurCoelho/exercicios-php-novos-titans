@@ -448,6 +448,29 @@ main{
     box-shadow: 0 0 15px #f3943b, 0 0 45px #f3943b, 0 0 85px #f3943b;
 }
 
+/* - Exercicio 19 - */
+
+.container a#ex19{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #a9f33b;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin-top: 70px;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+}
+
+.container a#ex19:hover{
+    color: #140025;
+    background: #ffffff;
+    box-shadow: 0 0 15px #a9f33b, 0 0 45px #a9f33b, 0 0 85px #a9f33b;
+}
+
 /* - Animaçoes - */
 
 @keyframes de-cima {
