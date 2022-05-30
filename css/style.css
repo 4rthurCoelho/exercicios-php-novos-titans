@@ -2,14 +2,14 @@
 
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     border: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background: linear-gradient(70deg, #AAFFA9,#04ebc4);
+    background: linear-gradient(70deg, #AAFFA9, #04ebc4);
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
@@ -24,8 +24,8 @@ main.container {
     padding: 100px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 3);
     border-radius: 15px;
-    animation: backInUp; 
-    animation-duration: 1s; 
+    animation: backInUp;
+    animation-duration: 1s;
 }
 
 main h2 {
@@ -35,14 +35,14 @@ main h2 {
 }
 
 main p {
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 .input-field {
     position: relative;
 }
 
-form .input-field:first-child{
+form .input-field:first-child {
     margin-bottom: 1.5rem;
 }
 
@@ -64,13 +64,13 @@ form .input-field:first-child{
     width: 100%;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(45deg, #AAFFA9,#04ebc4);
+    background: linear-gradient(45deg, #AAFFA9, #04ebc4);
     transform: scaleX(0);
     transition: all .3s ease-in-out;
     transform-origin: left;
 }
 
-.input-field input:focus ~ .underline::after {
+.input-field input:focus~.underline::after {
     transform: scaleX(1);
 }
 
@@ -85,27 +85,26 @@ form .input-field:first-child{
 }
 
 .input-field input::placeholder {
-  color: #036e5c;
+    color: #036e5c;
 }
 
 form input[type="submit"] {
     margin-top: 2rem;
     padding: 0.4rem;
-    background: linear-gradient(to left, #AAFFA9,#04ebc4);
+    background: linear-gradient(to left, #AAFFA9, #04ebc4);
     cursor: pointer;
     color: #000000;
     font-size: 1.5rem;
     border-radius: 15px;
-    width: 100%;  
-    font-weight: 300; 
+    width: 100%;
+    font-weight: 300;
 }
 
 
-.results{
+.results {
     text-align: center;
-    margin-top: 2rem;
     font-size: 30px;
-    background-image: linear-gradient(to left, #77b176,#00816c);
+    background-image: linear-gradient(to left, #77b176, #00816c);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -115,17 +114,18 @@ form input[type="submit"] {
 
 
 
-input[type=number]::-webkit-inner-spin-button { 
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    
-}
-input[type=number] { 
-   -moz-appearance: textfield;
-   appearance: textfield;
 
 }
 
-#voltar{
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+
+#voltar {
     background: #7e90a0;
     padding: 10px;
     text-align: center;
@@ -138,10 +138,10 @@ input[type=number] {
     font-weight: 400;
 }
 
-div{
+div {
     margin-bottom: 20px;
 }
 
-input{
+input {
     width: 500px;
 }
