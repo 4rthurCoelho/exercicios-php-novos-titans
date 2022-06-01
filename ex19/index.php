@@ -30,13 +30,16 @@
 		<form id="formulario" action="/ex19/index.php" method="post">
 			<div class="input-field">
 				<label for="text">Números</label><br />
-				<input type="text" name="value1" id="valor1" autocomplete="off" placeholder="Coloque os números aqui!" />
+				<input type="text" name="value1" id="valor1" autocomplete="off" placeholder="Adicione 25 números aqui!" />
 				<div class="underline"></div>
 			</div>
 			<input type="submit" name="enviar" value="Enviar" class="enviar" />
 		</form>
 
 		<?php
+
+		include_once 'db_connect.php';
+
 		if (isset($_POST['value1'])) {
 
 			$array = explode(" ", $_POST["value1"]);
@@ -60,6 +63,33 @@
             echo "<div class='results'>$quinto <br/><div/>";
 		}
 		?>
+	</main>
+
+	<div class="container">
+		<h2 class="titulo-listagem">Listagem de Dados Salvos</h2>
+
+		<table class="content-table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Numeros Informados</th>
+				</tr>
+			</thead>
+			<?php
+			$sql = "SELECT * FROM Numeros";
+			$resultado = mysqli_query($connect, $sql);
+			while ($dados = mysqli_fetch_array($resultado)) :
+			?>
+				<tbody>
+					<tr>
+						<td><?= $dados['id']; ?> </td>
+						<td><?= $dados['numerosInformados']; ?> </td>
+					<?php endwhile; ?>
+					</tr>
+				</tbody>
+		</table>
+
+	</div>
 </body>
 
 </html>
