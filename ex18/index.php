@@ -52,7 +52,8 @@
 
 		if (isset($_POST['values1']) && ($_POST['values2'])) {
 
-			function forVetor(){
+			function forVetor()
+			{
 
 				$primeiroConjunto = explode(" ", $_POST["values1"]);
 				$segundoConjunto = explode(" ", $_POST["values2"]);
@@ -75,44 +76,45 @@
 			print "<div class='results'><br> Os números não comuns do primeiro conjunto em relação ao segundo conjunto são: <br></div>";
 
 			forVetor();
-				
+
 			$values1 = mysqli_escape_string($connect, $_POST['values1']);
 			$values2 = mysqli_escape_string($connect, $_POST['values2']);
-					
+
 			$sql = "INSERT INTO Numeros (`conjunto1`, `conjunto2`) VALUES ('$values1', '$values2')";
 			mysqli_query($connect, $sql);
-			}
+		}
 		?>
-		
-		</main>
 
-		<div class= "container">
-			<h2 class= "titulo-listagem">Listagem de Dados Salvos</h2>
+	</main>
 
-			<table class="content-table">
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Conjunto 1</th>
-						<th>Conjunto 2</th>
-					</tr>
-				</thead>
-				<?php
-				$sql = "SELECT * FROM Numeros";
-                $resultado = mysqli_query($connect, $sql);
-                while($dados = mysqli_fetch_array($resultado)):
-				?>
+	<div class="container">
+		<h2 class="titulo-listagem">Listagem de Dados Salvos</h2>
+
+		<table class="content-table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Conjunto 1</th>
+					<th>Conjunto 2</th>
+				</tr>
+			</thead>
+			<?php
+			$sql = "SELECT * FROM Numeros";
+			$resultado = mysqli_query($connect, $sql);
+			while ($dados = mysqli_fetch_array($resultado)) :
+			?>
 				<tbody>
 					<tr>
-						<td><?= $dados['id'];?> </td>
-						<td><?= $dados['conjunto1'];?> </td>
-						<td><?= $dados['conjunto2'];?> </td>
-						<?php endwhile; ?>
+						<td><?= $dados['id']; ?> </td>
+						<td><?= $dados['conjunto1']; ?> </td>
+						<td><?= $dados['conjunto2']; ?> </td>
+					<?php endwhile; ?>
 					</tr>
 				</tbody>
-			</table>
-			
-		</div>
-		
-		</body>
-	</html>
+		</table>
+
+	</div>
+
+</body>
+
+</html>
