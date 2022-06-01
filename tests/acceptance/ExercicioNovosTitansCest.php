@@ -57,9 +57,9 @@ class ExercicioNovosTitansCest
         $I->fillField('value2', 'M');
         $I->fillField('value3', '24');
         $I->click('enviar');
-        $I->see('João você não foi Aceita(o) pois não atende os requisitos do projeto:('); 
+        $I->see('João você não foi Aceita(o) pois não atende os requisitos do projeto:(');
     }
-    
+
     public function ex4Works(AcceptanceTester $I)
     {
         $I->amOnPage('/ex4');
@@ -75,7 +75,7 @@ class ExercicioNovosTitansCest
         $I->fillField('value2', '25');
         $I->fillField('value3', '15');
         $I->click('enviar');
-        $I->see('Dois valores iguais não são aceitos :('); 
+        $I->see('Dois valores iguais não são aceitos :(');
     }
 
     public function ex5Works(AcceptanceTester $I)
@@ -99,9 +99,9 @@ class ExercicioNovosTitansCest
         $I->fillField('value2', '17');
         $I->fillField('value3', '17');
         $I->click('enviar');
-        $I->see('Com estes valores temos um Triangulo Equilatero :)'); 
+        $I->see('Com estes valores temos um Triangulo Equilatero :)');
     }
-    
+
     public function ex6Works(AcceptanceTester $I)
     {
         $I->amOnPage('/ex6');
@@ -164,12 +164,12 @@ class ExercicioNovosTitansCest
         $I->fillField('value1', 'Caio');
         $I->fillField('value2', 'Professor');
         $I->click('enviar');
-        $I->see('Professor Caio. Você tem 10 dias a partir da data de empréstimo para fazer a devolução do Livro: Vermelho Branco e Sangue Azul'); 
+        $I->see('Professor Caio. Você tem 10 dias a partir da data de empréstimo para fazer a devolução do Livro: Vermelho Branco e Sangue Azul');
         //Teste aluno
         $I->fillField('value1', 'Caio');
         $I->fillField('value2', 'Aluno');
         $I->click('enviar');
-        $I->see('Aluno: Caio. Você tem 03 dias a partir da data de empréstimo para fazer a devolução do Livro: Vermelho Branco e Sangue Azul');  
+        $I->see('Aluno: Caio. Você tem 03 dias a partir da data de empréstimo para fazer a devolução do Livro: Vermelho Branco e Sangue Azul');
     }
 
     public function ex8Works(AcceptanceTester $I)
@@ -179,7 +179,7 @@ class ExercicioNovosTitansCest
         //Teste
         $I->fillField('value1', '3');
         $I->click('enviar');
-        $I->see('123'); 
+        $I->see('123');
     }
 
     public function ex9Works(AcceptanceTester $I)
@@ -189,7 +189,7 @@ class ExercicioNovosTitansCest
         //Teste
         $I->fillField('value1', '4');
         $I->click('enviar');
-        $I->see('SOLSOLSOLSOL'); 
+        $I->see('SOLSOLSOLSOL');
     }
 
     public function ex10Works(AcceptanceTester $I)
@@ -223,7 +223,7 @@ class ExercicioNovosTitansCest
         3 X 7 = 21
         3 X 8 = 24
         3 X 9 = 27
-        3 X 10 = 30'); 
+        3 X 10 = 30');
     }
 
     public function ex12Works(AcceptanceTester $I)
@@ -237,7 +237,7 @@ class ExercicioNovosTitansCest
         Beijo Beijo
         Beijo Beijo Beijo
         Beijo Beijo Beijo Beijo
-        Beijo Beijo Beijo Beijo Beijo'); 
+        Beijo Beijo Beijo Beijo Beijo');
     }
 
     public function ex13Works(AcceptanceTester $I)
@@ -247,7 +247,7 @@ class ExercicioNovosTitansCest
         //Teste
         $I->fillField('value1', '1 2 3 4 5 150 134 1423 566');
         $I->click('enviar');
-        $I->see('2 números foram informados entre 100 e 200'); 
+        $I->see('2 números foram informados entre 100 e 200');
     }
 
     public function ex14Works(AcceptanceTester $I)
@@ -272,7 +272,7 @@ class ExercicioNovosTitansCest
         $I->seeInDatabase('Resultados', ['altura1' => '150', 'crescimento1' => '2', 'altura2' => '110', 'crescimento2' => '3']);
     }
 
-    
+
     public function ex15Works(AcceptanceTester $I)
     {
         $I->amOnPage('/ex15');
@@ -285,7 +285,7 @@ class ExercicioNovosTitansCest
         $I->see('Para a massa ser maior ou igual a 0.10 gramas, serão precisos 7 minutos');
         $I->seeInDatabase('Resultados', ['massa' => '10', 'perda' => '20', 'tempo' => '20']);
     }
-    
+
     public function ex16Works(AcceptanceTester $I)
     {
         $I->amOnPage('/ex16');
@@ -355,40 +355,8 @@ class ExercicioNovosTitansCest
         13
         19
         25');
+        $I->seeInDatabase('Numeros', ['numerosInformados' => '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25']);
+        $I->see('Listagem de Dados Salvos');
+        $I->see('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25');
     }
-
-    public function ex19Works(AcceptanceTester $I)
-    {
-        $I->amOnPage('/ex19');
-        $I->see('Exercício 19');
-        //Teste
-        $I->fillField('value1', '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25');
-        $I->click('enviar');
-        $I->see('1
-        2
-        3
-        4
-        5
-        6
-        7
-        8
-        9
-        10
-        11
-        12
-        13
-        14
-        15
-        16
-        17
-        18
-        19
-        20
-        21
-        22
-        23
-        24
-        25');
-    }
-
 }
