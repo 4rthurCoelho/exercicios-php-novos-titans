@@ -53,24 +53,22 @@
 
 			function forVetor(){
 
-				$values1 = $_POST['values1'];
-				$values2 = $_POST['values2'];
+				$primeiroConjunto = explode(" ", $_POST["values1"]);
+				$segundoConjunto = explode(" ", $_POST["values2"]);
 
-				$vetor1 = explode(" ", $values1);
-				$vetor2 = explode(" ", $values2);
-				$vetor3 = array();
+				// Faz a comparação dos valores disponibilizados pelo usuário
+				$primeiraDiferenca = array_diff($primeiroConjunto,$segundoConjunto);
+				$segundaDiferença = array_diff($segundoConjunto,$primeiroConjunto);
 
-				for ($i = 0; $i < 10; $i++) {
+				// Junta as duas arrays formadas em uma só
+				$resultadosJuntos = array_merge($primeiraDiferenca, $segundaDiferença);
+				
+				// Converte as arrays em strings
+				$stringConjunto1 = implode(" ", $primeiroConjunto);
+				$stringConjunto2 = implode(" ", $segundoConjunto);
+				$resultado = implode(" ", $resultadosJuntos);
 
-					if ($vetor1[$i] != $vetor2[$i]) {
-
-						$vetor3 = $vetor1[$i];
-						print "<div class='results'>$vetor3 </div>";
-
-						$vetor3 = $vetor2[$i];
-						print "<div class='results'>$vetor3 </div>";
-					}
-				}
+				echo "<div class='results'>$resultado</div>";
 			}
 
 			print "<div class='results'><br> Os números não comuns do primeiro conjunto em relação ao segundo conjunto são: <br></div>";
