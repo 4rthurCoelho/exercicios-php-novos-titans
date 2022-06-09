@@ -336,18 +336,11 @@ class ExercicioNovosTitansCest
         $I->amOnPage('/ex18');
         $I->see('Exercício 18');
         //Teste
-        $I->fillField('values1', '1 2 3 4 5 6 12 13 14 15');
-        $I->fillField('values2', '1 2 3 4 5 6 7 8 9 10');
+        $I->fillField('values1', '3 35 42 1 25 32 4 7 12 15');
+        $I->fillField('values2', '1 3 32 15 487 25 34 56 25 7');
         $I->click('enviar');
         $I->see('Os números não comuns do primeiro conjunto em relação ao segundo conjunto são:
-        12
-        7
-        13
-        8
-        14
-        9
-        15
-        10');
+        35 42 4 12 487 34 56');
     }
 
 }
