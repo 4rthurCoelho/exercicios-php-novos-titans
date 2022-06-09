@@ -39,18 +39,25 @@
 		<?php
 		if (isset($_POST['value1'])) {
 
-			$numbers = $_POST['value1'];
+			$array = explode(" ", $_POST["value1"]);
+    
+            $numero = 5;
 
-			$vetor = explode(" ", $numbers);
+            $divisaoMatriz = array_chunk($array, $numero);
 
-			echo '<div class="matriz"><table border=1 rows=5 cols=5><tr>';
-			for ($i = 0; $i < 25; $i++) {
-				if ($i % 5 === 0) {
-					echo '</tr><tr>';
-				}
-				echo "<td><div class='results'>$vetor[$i]</div></td>";
-			}
-			echo '</tr></table></div>';
+            $primeiro = $divisaoMatriz[0][0];
+            $segundo = $divisaoMatriz[1][1];
+            $terceiro = $divisaoMatriz[2][2];
+            $quarto = $divisaoMatriz[3][3];
+            $quinto = $divisaoMatriz[4][4];
+
+			echo "<div class='results'>Números que estão na diagonal principal: <br/><div/>";
+
+            echo "<div class='results'>$primeiro <br/><div/>";
+            echo "<div class='results'>$segundo <br/><div/>";
+            echo "<div class='results'>$terceiro <br/><div/>";
+            echo "<div class='results'>$quarto <br/><div/>";
+            echo "<div class='results'>$quinto <br/><div/>";
 		}
 		?>
 </body>
