@@ -318,10 +318,7 @@ class ExercicioNovosTitansCest
         //Teste
         $I->fillField('value1', '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20');
         $I->click('enviar');
-        $I->see('De todos os numeros informado o maior é o 20
-        Já o menor numero é o 1
-        Porcentagem de Numeros Pares: 50%
-        Soma de todos os numeros: 210');
+        $I->see('De todos os numeros informado o maior é o 20Já o menor numero é o 1Porcentagem de Numeros Pares: 50%Soma de todos os numeros: 210');
         $I->seeInDatabase('Resultados', ['numeros' => '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20', 'maior' => '20', 'menor' => '1', 'porcentagem' => '50', 'soma' => '21']);
         $I->see('Listagem de Dados Salvos');
         $I->see('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20');
