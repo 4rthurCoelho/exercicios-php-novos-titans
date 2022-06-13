@@ -86,9 +86,10 @@
 		</main>
 		
 		<div class= "container">
-			<h2>Listagem de Dados Salvos</h2>
+			<h2 class="titulo-listagem">Listagem de Dados Salvos</h2>
 
-			<table>
+			<table class="content-table">
+				<thead>
 				<tr>
 					<th>Numeros</th>
 					<th>Maior Numero</th>
@@ -96,20 +97,24 @@
 					<th>Valor da Porcentagem</th>
 					<th>Soma</th>
 				</tr>
+				</thead>
 				<?php
 				$sql = "SELECT * FROM Resultados";
                 $resultado = mysqli_query($connect, $sql);
                 while($dados = mysqli_fetch_array($resultado)):
 				?>
+				<tbody>
 				<tr>
 					<td><?= $dados['numeros'];?> </td>
                     <td><?= $dados['maior'];?> </td>
                     <td><?= $dados['menor'];?></td>
                     <td><?= $dados['porcentagem'];?></td>
                     <td><?= $dados['soma'];?></td>
+					<?php endwhile; ?>
 				</tr>
+				</tbody>
 			</table>
-			 <?php endwhile; ?>
+			 
 		</div>	
 		</body>
 	</html>

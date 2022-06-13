@@ -43,6 +43,9 @@
 		</form>
 
 		<?php
+
+		include_once 'db_connect.php';
+
 		$values1 = '';
 		$values2 = '';
 		$vetor1 = '';
