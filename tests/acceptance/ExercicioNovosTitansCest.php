@@ -368,61 +368,8 @@ class ExercicioNovosTitansCest
         //Teste
         $I->fillField('value1', '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25');
         $I->click('enviar');
-        $I->see('Matriz:
-        1
-        2
-        3
-        4
-        5
-        6
-        7
-        8
-        9
-        10
-        11
-        12
-        13
-        14
-        15
-        16
-        17
-        18
-        19
-        20
-        21
-        22
-        23
-        24
-        25
-        Matriz somente com números impares:
-        1
-        3
-        5
-        7
-        9
-        11
-        13
-        15
-        17
-        19
-        21
-        23
-        25
-        Matriz somente com números pares:
-        2
-        4
-        6
-        8
-        10
-        12
-        14
-        16
-        18
-        20
-        22
-        24
-        ');
-        $I->seeInDatabase('Resultados', ['numeros' => '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25', 'impares' => '1 3 5 7 9 11 13 15 17 19 21 23 25', 'pares' => '2 4 6 8 10 12 14 16 18 20 22 24']);
+        $I->see('Matriz:12345678910111213141516171819202122232425Matriz somente com números impares:135791113151719212325Matriz somente com números pares:24681012141618202224');
+        $I->seeInDatabase('Numeros', ['numeros' => '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25', 'impares' => '1 3 5 7 9 11 13 15 17 19 21 23 25', 'pares' => '2 4 6 8 10 12 14 16 18 20 22 24']);
         $I->see('Listagem de Dados Salvos');
         $I->see('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25');
         $I->see('1 3 5 7 9 11 13 15 17 19 21 23 25');
