@@ -61,6 +61,11 @@
             echo "<div class='results'>$terceiro <br/><div/>";
             echo "<div class='results'>$quarto <br/><div/>";
             echo "<div class='results'>$quinto <br/><div/>";
+
+			$numerosInformados = mysqli_escape_string($connect, $_POST['value1']);
+
+			$sql = "INSERT INTO Numeros (`numerosInformados`) VALUES ('$numerosInformados')";
+			mysqli_query($connect, $sql);
 		}
 		?>
 	</main>
