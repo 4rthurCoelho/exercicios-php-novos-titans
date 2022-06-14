@@ -90,13 +90,13 @@
 
 			<table class="content-table">
 				<thead>
-				<tr>
-					<th>Numeros</th>
-					<th>Maior Numero</th>
-					<th>Menor Numero</th>
-					<th>Valor da Porcentagem</th>
-					<th>Soma</th>
-				</tr>
+					<tr>
+						<th>Numeros</th>
+						<th>Maior Numero</th>
+						<th>Menor Numero</th>
+						<th>Valor da Porcentagem</th>
+						<th>Soma</th>
+					</tr>
 				</thead>
 				<?php
 				$sql = "SELECT * FROM Resultados";
@@ -104,15 +104,15 @@
                 while($dados = mysqli_fetch_array($resultado)):
 				?>
 				<tbody>
-				<tr>
-					<td><?= $dados['numeros'];?> </td>
-                    <td><?= $dados['maior'];?> </td>
-                    <td><?= $dados['menor'];?></td>
-                    <td><?= $dados['porcentagem'];?></td>
-                    <td><?= $dados['soma'];?></td>
-					<?php endwhile; ?>
-				</tr>
+					<tr>
+						<td><?= $dados['numeros'];?> </td>
+						<td><?= $dados['maior'];?> </td>
+						<td><?= $dados['menor'];?></td>
+						<td><?= $dados['porcentagem'];?></td>
+						<td><?= $dados['soma'];?></td>
+					</tr>
 				</tbody>
+				<?php endwhile; ?>
 			</table>
 			 
 		</div>	

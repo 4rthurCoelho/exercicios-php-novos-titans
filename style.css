@@ -500,29 +500,6 @@ main{
     position: relative;
     display: inline-block;
     padding: 15px 30px;
-    color: #3b94f3;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 50px;
-    overflow: hidden;
-    transition: 1s;
-    margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.9s both;
-}
-
-.container a#ex20:hover{
-    color: #140025;
-    background: #ffffff;
-    box-shadow: 0 0 15px #3b94f3, 0 0 45px #3b94f3, 0 0 85px #3b94f3;
-}
-
-/* - Exercicio 20 - */
-
-.container a#ex20{
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
     color: #f33b9a;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -531,7 +508,7 @@ main{
     overflow: hidden;
     transition: 1s;
     margin-top: 70px;
-    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.7s both;
+    animation: entrada-botoes 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.9s both;
 }
 
 .container a#ex20:hover{

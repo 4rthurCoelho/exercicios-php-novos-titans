@@ -106,14 +106,14 @@
 			$resultado = mysqli_query($connect, $sql);
 			while ($dados = mysqli_fetch_array($resultado)) :
 			?>
-				<tbody>
-					<tr>
-						<td><?= $dados['id']; ?> </td>
-						<td><?= $dados['conjunto1']; ?> </td>
-						<td><?= $dados['conjunto2']; ?> </td>
-					<?php endwhile; ?>
-					</tr>
-				</tbody>
+			<tbody>
+				<tr>
+					<td><?= $dados['id']; ?> </td>
+					<td><?= $dados['conjunto1']; ?> </td>
+					<td><?= $dados['conjunto2']; ?> </td>
+				</tr>
+			</tbody>
+			<?php endwhile; ?>
 		</table>
 
 	</div>

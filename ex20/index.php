@@ -95,15 +95,15 @@
 			$resultado = mysqli_query($connect, $sql);
 			while ($dados = mysqli_fetch_array($resultado)) :
 			?>
-				<tbody>
-					<tr>
-						<td><?= $dados['id']; ?> </td>
-						<td><?= $dados['numeros']; ?> </td>
-						<td><?= $dados['impares']; ?> </td>
-						<td><?= $dados['pares']; ?> </td>
-					<?php endwhile; ?>
-					</tr>
-				</tbody>
+			<tbody>
+				<tr>
+					<td><?= $dados['id']; ?> </td>
+					<td><?= $dados['numeros']; ?> </td>
+					<td><?= $dados['impares']; ?> </td>
+					<td><?= $dados['pares']; ?> </td>
+				</tr>
+			</tbody>
+			<?php endwhile; ?>
 		</table>
 
 	</div>
